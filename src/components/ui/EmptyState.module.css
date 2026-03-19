@@ -1,0 +1,37 @@
+.wrap {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(19, 22, 30, 0.55);
+}
+
+.text {
+  min-width: 0;
+}
+
+.title {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.message {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.action {
+  margin-left: auto;
+}
+

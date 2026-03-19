@@ -1,0 +1,30 @@
+.wrap {
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.header {
+  padding: 14px 14px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.sub {
+  color: var(--text3);
+  font-size: 12px;
+}
+
+.canvas {
+  height: 260px;
+  padding: 12px 10px 14px;
+}
+

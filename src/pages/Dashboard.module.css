@@ -1,0 +1,129 @@
+.page {
+  display: grid;
+  gap: 18px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1.35fr 0.9fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.threeCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.logList {
+  display: grid;
+  gap: 12px;
+}
+
+.logRow {
+  display: grid;
+  grid-template-columns: 10px 1fr;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(13, 15, 20, 0.22);
+  transition: var(--transition);
+}
+
+.logRow:hover {
+  transform: translateY(-2px);
+  border-color: rgba(110, 231, 183, 0.22);
+  box-shadow: 0 0 0 4px var(--accent-glow);
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-top: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.dotMild {
+  background: rgba(110, 231, 183, 0.8);
+}
+
+.dotModerate {
+  background: rgba(251, 146, 60, 0.85);
+}
+
+.dotSevere {
+  background: rgba(248, 113, 113, 0.85);
+}
+
+.logMain {
+  min-width: 0;
+}
+
+.logText {
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.logMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.when {
+  margin-left: auto;
+  color: var(--text3);
+  font-size: 12px;
+}
+
+.alertList {
+  display: grid;
+  gap: 10px;
+}
+
+.pbList {
+  display: grid;
+  gap: 12px;
+}
+
+.summaryText {
+  color: var(--text2);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.summaryHint {
+  margin-top: 12px;
+}
+
+@media (max-width: 1100px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .threeCol {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+  .when {
+    margin-left: 0;
+  }
+}
+
